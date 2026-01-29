@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    {% if title%} 
+       <title>Flask Web Page-{{title}}</title>
+    {% else %}
+    <title>Flask Web Page</title>
+    {% endif %}
+  </head>
+  <body>
+    {% block content %}{% endblock %}
+
+  </body>
+</html>

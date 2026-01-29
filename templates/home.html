@@ -1,24 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My First Web Page</title>
-</head>
-<body>
+{% extends "layout.html"%}
+{% block content %}
 
-    <h1>Welcome to My Website</h1>
-    <p>This is my first HTML page.</p>
+    {%for post in posts%}
+    <h1>{{post.title}}</h1>
+    <p>By {{post.author}}on{{post.date_posted}}</p>
+    <p>{{post.content}}</p>
+    {% endfor %}
+{% endblock  content %}    
 
-    <h2>About Me</h2>
-    <p>My name is Rajesh. I am learning HTML.</p>
-
-    <h3>My Hobbies</h3>
-    <ul>
-        <li>Reading</li>
-        <li>Coding</li>
-        <li>Music</li>
-    </ul>
-
-    <a href="https://www.google.com">Go to Google</a>
-
-</body>
-</html>

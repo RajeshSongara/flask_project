@@ -1,7 +1,26 @@
+{% extends "layout.html"%}
+{% block content %}
+    <h1> about page. </h1>
+{% endblock content %}    
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My First Web Page</title>
+   {% if title%} 
+       <title>Flask Web Page-{{title}}</title>
+    {% else %}
+    <title>Flask Web Page</title>
+    {% endif %}
 </head>
 <body>
 
